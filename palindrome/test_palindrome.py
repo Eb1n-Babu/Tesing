@@ -1,4 +1,4 @@
-from palindrome.palindrome_Test import palindrome
+from palindrome_check import palindrome
 import unittest
 
 class TestPalindrome(unittest.TestCase):

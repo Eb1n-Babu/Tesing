@@ -6,7 +6,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/Eb1n-Babu/Tesing.git'
             }
         }
-        stage('Test') {
+        stage('Test-1') {
             steps {
                 bat '''
                 cd primeNumbers
@@ -14,5 +14,22 @@ pipeline {
                 '''
             }
         }
+        stage('Test-2') {
+            steps {
+                bat '''
+                cd anagram
+                python anagram_testing.py
+                '''
+            }
+        }
+        stage('Test-3') {
+            steps {
+                bat '''
+                cd palindrome
+                python test_palindrome.py
+                '''
+            }
+        }
     }
 }
+
