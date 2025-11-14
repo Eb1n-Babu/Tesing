@@ -10,6 +10,5 @@ def findPrime(num):
     else:
         return False
 
-for k in range(1, 100):
-    print(findPrime(k), k)
+
 
