@@ -1,5 +1,5 @@
 import unittest
-from .anagram import anagram
+from anagram_check import anagram
 
 
 class TestAnagram(unittest.TestCase):
