@@ -1,5 +1,5 @@
 import unittest
-from primeNumbers.primeNumber import  findPrime
+from primeNumber import findPrime
 
 
 class TestPrime(unittest.TestCase):
