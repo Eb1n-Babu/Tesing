@@ -30,6 +30,15 @@ pipeline {
                 '''
             }
         }
+        stage('Test-4') {
+            steps {
+                bat '''
+                cd Test_Module
+                python test1.py
+                python test2.py
+                python test3.py
+                '''
+            }
     }
 }
 
