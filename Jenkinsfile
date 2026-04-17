@@ -37,6 +37,7 @@ pipeline {
                 python test1.py
                 '''
             }
+        }
     }
 }
 
